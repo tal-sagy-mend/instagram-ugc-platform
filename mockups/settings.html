@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Instagram UGC Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold gradient-bg bg-clip-text text-transparent">Instagram UGC Platform</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">← Back</a>
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">⚙️ Settings</h2>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Sidebar -->
+            <aside class="lg:w-64 flex-shrink-0">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <nav class="space-y-2">
+                        <a href="#" class="block px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium">General</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg">Account</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg">Team</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg">Integrations</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg">API</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg">Billing</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg">Notifications</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Settings Content -->
+            <div class="flex-1">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-6">General Settings</h3>
+                    
+                    <!-- Profile Information -->
+                    <div class="mb-8">
+                        <h4 class="text-md font-medium text-gray-900 mb-4">Profile Information</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" value="John Doe" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" value="john@company.com" disabled class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-50 text-gray-500">
+                                <p class="text-xs text-gray-500 mt-1">Contact admin to change email</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Role</label>
+                                <select disabled class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-50 text-gray-500">
+                                    <option>Admin</option>
+                                    <option>Member</option>
+                                    <option>Viewer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Connection -->
+                    <div class="mb-8">
+                        <h4 class="text-md font-medium text-gray-900 mb-4">Instagram Connection</h4>
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center">
+                                    <span class="text-green-500 text-xl mr-2">✅</span>
+                                    <span class="font-medium text-gray-900">Connected</span>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">Disconnect</button>
+                                    <button class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 text-sm">Reconnect</button>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-600">Account: @brandname</p>
+                            <p class="text-xs text-yellow-600 mt-2">⚠️ Token expires in 15 days</p>
+                        </div>
+                    </div>
+
+                    <!-- Default Settings -->
+                    <div>
+                        <h4 class="text-md font-medium text-gray-900 mb-4">Default Settings</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Default export format</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Web optimized</option>
+                                    <option>Original quality</option>
+                                    <option>Compressed</option>
+                                </select>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="autoSave" class="mr-2" checked>
+                                <label for="autoSave" class="text-sm text-gray-700">Auto-save discovered content</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t">
+                        <button class="px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg font-medium hover:shadow-lg">Save Changes</button>
+                    </div>
+                </div>
+
+                <!-- Team Management -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Team Members</h3>
+                        <button class="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-medium hover:shadow-lg text-sm">
+                            + Invite User
+                        </button>
+                    </div>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 text-sm font-medium text-gray-700">Name</th>
+                                    <th class="text-left py-3 px-4 text-sm font-medium text-gray-700">Email</th>
+                                    <th class="text-left py-3 px-4 text-sm font-medium text-gray-700">Role</th>
+                                    <th class="text-right py-3 px-4 text-sm font-medium text-gray-700">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 text-sm text-gray-900">John Doe</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">john@company.com</td>
+                                    <td class="py-3 px-4 text-sm">
+                                        <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Admin</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-sm text-right">
+                                        <button class="text-blue-600 hover:text-blue-800 mr-3">Edit</button>
+                                        <button class="text-red-600 hover:text-red-800">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 text-sm text-gray-900">Jane Smith</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">jane@company.com</td>
+                                    <td class="py-3 px-4 text-sm">
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Member</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-sm text-right">
+                                        <button class="text-blue-600 hover:text-blue-800 mr-3">Edit</button>
+                                        <button class="text-red-600 hover:text-red-800">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 text-sm text-gray-900">Bob Wilson</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">bob@company.com</td>
+                                    <td class="py-3 px-4 text-sm">
+                                        <span class="px-2 py-1 bg-gray-100 text-gray-800 rounded-full text-xs">Viewer</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-sm text-right">
+                                        <button class="text-blue-600 hover:text-blue-800 mr-3">Edit</button>
+                                        <button class="text-red-600 hover:text-red-800">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                        <p class="text-sm font-medium text-gray-900 mb-2">Roles:</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• <strong>Admin:</strong> Full access to all features</li>
+                            <li>• <strong>Member:</strong> Can discover, organize, and export content</li>
+                            <li>• <strong>Viewer:</strong> Read-only access to library</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
